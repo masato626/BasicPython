@@ -20,3 +20,4 @@ result3=tra(-100,100,1000,h)
 print("(1)",result1)
 print("(2)",result2)
 print("(3)",result3)
+
