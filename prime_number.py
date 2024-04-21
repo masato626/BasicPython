@@ -1,14 +1,14 @@
-a = int(61)
-b=int(10)
-if a <= 1:
-    print("素数でない")
-else:
-    is_prime = True
-    for i in range(2, a):
+a=float(input("a の値を入力: "))
+def prime(a):
+    if a <= 1:
+        return False
+    if int(a)!=a:
+        return False
+    for i in range(2, int(a)):
         if a % i == 0:
-            is_prime = False
-            break
-    if is_prime:
-        print("素数")
-    else:
-        print("素数でない")
+            return False
+    return True
+print("素数",prime(a))
+            
+        
+        
